@@ -1,0 +1,789 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   
+    <head>`
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+  background: linear-gradient(rgb(123, 198, 228),rgb(3, 133, 126));
+  
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#body1{
+  background:linear-gradient(rgb(2, 49, 68),rgb(100, 194, 231));
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-size : 32px;
+  height: 47px;
+  text-align: center;
+  color: rgb(250, 245, 245);
+  text-shadow: 4px 1px black;
+}
+#body2{
+  background: white;
+  height: 524px;
+  width: 1031px;
+  margin:auto;
+  padding-top: 5px;
+  border: 7px solid #0da3ac45;
+  border-radius: 18px;
+ 
+
+
+}
+ul.NavBar {
+  
+  list-style-type: none;
+  margin-right: 0px;
+  padding: 0;
+  overflow: hidden;
+  background:linear-gradient(#f8db57,rgb(243, 242, 185));
+  height: 39px;
+  width: 1037px;
+  margin-top: 9px;
+  margin-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 31px;
+}
+ul.first {
+  list-style-type: square; 
+  margin-right: 3px;
+  background-color:transparent;
+  width: fit-content;
+  height: auto;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-top: 0px;
+
+
+}
+
+li {
+float: left;
+padding-left: 15px;
+
+}
+li.NavBar  {
+float: left;
+padding-left: 0px;
+margin-left: 23px;
+padding: 8px 0px;
+
+
+
+}
+
+li.NavBar a{
+  display: block;
+  color: rgb(6, 7, 7);
+  text-align: center;
+  padding: 0px 12px;
+  text-decoration: none;
+  cursor: pointer;
+  text-size-adjust: auto;
+  box-shadow: 2px 0px rgb(39, 104, 130);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 3px;
+  height: 23px;
+}
+li a {
+  display: block;
+  color: rgb(3, 0, 0);
+  text-align: center;
+  padding: 12px 12px;
+  text-decoration: none;
+  cursor: pointer; 
+  margin-left: -20px;
+  text-size-adjust: auto;
+}
+li a:hover{
+  background-color: #63b8bd46;
+  border-radius: 5px;
+}
+li.NavBar a:hover {
+  background-color:#f1dd80;
+} 
+
+#w1 {
+margin-right: 110px;
+margin-top: 0px;
+}
+
+#dis1 {
+  
+  background-color: rgba(245, 245, 245, 0.863);
+  height: 450px;
+  width: 280px;
+  float:left;
+  padding-right: 0px;
+  border:1px solid black;
+  margin-top: -2px;
+  position:relative;
+  border: solid;
+  border-radius: 5px;
+  left: 110px;
+  font-weight: bold;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+#demo{
+  height: 420px;
+  width: 260px;
+  margin-top: -2px;
+  margin-left: 20px;
+  font-weight: normal;
+  font-size: 20px;
+  overflow: auto;
+  display:inline-block;
+}
+
+#dis {
+  height: 450px;
+  background-color: rgba(245, 245, 245, 0.863);
+  width: 280px;
+  float: left;
+  padding-right: 0px;
+  margin-top: 0px;
+  border:1px solid black;
+  position:relative;
+  border: solid;
+  border-radius: 5px;
+  left: 340px;
+  font-weight: bold;
+  font-weight: bold;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+#demo1{
+  height: 420px;
+  width: 260px;
+  margin-top: -2px;
+  margin-left: 20px;
+  font-weight: normal;
+  font-size: 20px;
+  overflow: auto;
+ margin-bottom: 0px;
+
+}
+#container1 {
+    margin: 2px;
+    width:auto;
+    color: gainsboro;
+    padding: 6px 0px; 
+}
+
+#container2{
+    margin: 4px;
+    border: 2px;
+    color:gainsboro;
+}
+#path{
+  height: 28px;
+  width: 159px;
+  overflow-x: auto;
+  margin-left: 93px;
+  height: 24px;
+  width: 257px;
+  margin-top: 0px;  
+}
+
+#path1{
+  height: 28px;
+  width: 159px;
+  overflow-x: auto;
+  margin-left: 93px;
+  height: 24px;
+  width: 257px;
+  margin-top: 0px;  
+}
+
+#ip,#ip4 {
+  margin: 0px;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 3px;
+  height: 32px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 20px;
+  border-radius: 7px;
+  width: 148px;
+}
+#ip3,#ip2 {
+  margin: 0px;
+  text-align: left;
+  margin-top: 0px;
+  margin-left: 3px;
+  height: 31px;
+  border-radius: 7px;
+  font-size: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  width: 50px;
+}
+#line{
+  border-right:30px;
+  border: 0.5px solid white;
+  margin-top: 2px;
+}
+
+#btn1,#btn2{
+  margin-left: 50px;
+  width: 51px; 
+  height: 33px; 
+  font-size: 18px;
+  font-family: 'inherit';
+  border-radius: 11px;
+  font-weight: bold;
+}
+
+.btn3, .btn4, .btn5 , .btn6{
+  color: black;
+  background-color: transparent;
+  font-size: 22px;
+  border: 0px;
+  padding-bottom: 6px;
+  border-radius: 10px;
+}
+
+/* Darker background on mouse-over */
+.btn3:hover , .btn4:hover {
+  background-color: rgb(224, 220, 220);
+}
+
+.menu{
+      width: 150px;
+     box-shadow: 3px 3px 5px #d4d0d0;
+     background-color: antiquewhite;
+     border-style: solid;
+     border-width: 1px;
+    border-color: rgb(250, 245, 245);
+     border-radius: 2px;
+     padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    position: fixed;
+    display: none;
+}
+            
+ .menu-item{
+      height: 20px;
+}
+            
+.menu-item:hover{
+      background-color: #6CB5FF;
+      cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: None;
+  padding-top:10px;
+}
+.backcolor{
+  background-color: #f1f1f1;
+  padding-left: 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.zoom:hover{
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+</style>
+    </head>
+       <body >
+        <div id=body1>Hadoop Migration Tool</div>
+             <ul class = "NavBar">
+                <div class="dropdown">            
+                <li class="NavBar"><a href="#news">Edit</a>
+                  <div class="dropdown-content backcolor">
+                      <a class="zoom" href="#">Link 1</a>
+                      <a class="zoom" href="#">Link 2</a>
+                      <a class="zoom" href="#">Link 3</a>
+                  </div>
+                </li>
+                </div>
+                <!--<li><a href="#contact">Contact</a></li>-->
+                <div class="dropdown">
+                <li class="NavBar"><a href="#commands">Commands</a> 
+                  <div class="dropdown-content backcolor">
+                      <a class="zoom" href="#">Link 4</a>
+                      <a class="zoom" href="#">Link 5</a>
+                      <a class="zoom" href="#">Link 6</a>
+                  </div>
+                </li>
+                </div>
+                <div class="dropdown">
+                <li class="NavBar"><a href="#session">Session</a>
+                  <div class="dropdown-content backcolor">
+                      <a class="zoom" href="#">Link 7</a>
+                      <a class="zoom" href="#">Link 8</a>
+                      <a class="zoom" href="#">Link 9</a>
+                  </div>
+                </li>
+                </div>
+                <div class="dropdown">
+                <li class="NavBar"><a href="#about">About</a>
+                  <div class="dropdown-content backcolor">
+                      <a class="zoom" href="#">Link 10</a>
+                      <a class="zoom" href="#">Link 11</a>
+                      <a class="zoom" href="#">Link 12</a>
+                  </div>
+                </li>
+                </div>
+                <div class="dropdown">
+                <li class="NavBar"><a href="#help">Help</a>
+                  <div class="dropdown-content backcolor">
+                      <a class="zoom" href="#">Link 13</a>
+                      <a class="zoom" href="#">Link 14</a>
+                      <a class="zoom" href="#">Link 15</a>
+                  </div>
+                </li>
+              </div>
+            </ul>
+<div id="body2">
+  <div id="container1">
+        <div id=w1></div>
+        <input type="button" id="btn1" onclick= openlinkP() value="login" >
+        <input type="text" id="ip" placeholder="Enter IPaddress" value="">
+        <input type="text" id="ip2" placeholder="Port" value="" required >
+        <button class="btn3" id = "btn3" onclick=getPrevPageP() ><i class="fa fa-arrow-left"></i></button>
+        <button class="btn4" id = "btn4" onclick=openlinkP() ><i class="fa fa-refresh"></i></button>
+        
+        <input type="button" id="btn2" onclick= openlinkQ() value="login" style= "margin-left: 162px; margin-right:2px;">
+        <input type="text" id="ip4" placeholder="Enter IPaddress" value="" >
+        <input type="text" id="ip3" placeholder="Port" value="">
+        <button class="btn5" id = "btn5" onclick=getPrevPageQ() ><i class="fa fa-arrow-left"></i></button>
+        <button class="btn6" id = "btn6" onclick=openlinkQ() ><i class="fa fa-refresh"></i></button>
+
+ </div>
+
+ <div id = "container2">
+        <input type="text" id = "path" placeholder="Path" value="" > 
+        <input type="text" id = "Type" placeholder="Type" value = >
+        <input type ="text" id ="path1" placeholder="Path1" value="">
+        <input type="text" id = "Type1" placeholder="Type1" value = >
+</div>
+       
+<div id="dis1" class="window"  > &nbsp File Names : <br>
+    <p id="demo">
+        <div class="menu">
+            <div class="menu-item">Download</div>
+            <hr>
+            <div class="menu-item" onclick ="copy()">Copy</div>
+            <hr>
+            <div class="menu-item">Paste</div>
+            <hr>
+            <div class="menu-item">Delete</div>
+      </div>  
+    </p>
+</div>
+<div id="dis" class="window2" > &nbsp File Names : <br>
+    <p id ="demo1"> 
+
+        <div class="menu">
+            <div class="menu-item">Download</div>
+            <hr>
+            <div class="menu-item" onclick ="copy()">Copy</div>
+            <hr>
+            <div class="menu-item">Paste</div>
+            <hr>
+            <div class="menu-item">Delete</div>
+      </div>
+    </p>
+</div>
+</div>
+</div>
+   
+        
+<script>
+          function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+          //DROPDOWN
+          document.getElementById("btn3").disabled = true;
+          $("#path").hide();
+          $("#Type").hide();
+          $("#Type1").hide();
+          //To load first set of files and directories
+          function openlinkP() { 
+          document.getElementById("Type").value="";
+          document.getElementById("path").value="";  
+          var get = document.getElementById("ip").value;
+          //condition to check if ip is there or not
+          if(get == 0){
+          alert("Please enter an IPaddress")
+          }
+          else{
+          $("#demo").empty();
+          IP = document.getElementById("ip").value;
+          Port1= document.getElementById("ip2").value ;
+          var ourRequest = new XMLHttpRequest();
+          ourRequest.open('GET',"http://"+ IP + ":50070" + "/webhdfs/v1/?user.name=hduser&op=LISTSTATUS")
+          ourRequest.onload = function JsonPARSE() {
+          var textP =(ourRequest.responseText);
+          objP= JSON.parse(textP);
+            
+         for ( i = 0; i < textP.length; i++)
+         if (objP&& objP.FileStatuses&& objP.FileStatuses.FileStatus[i]) {
+         resultP = (objP.FileStatuses.FileStatus[i].pathSuffix);
+         //to display the files names
+         $("#demo").html($('#demo').html()+ [("<ul class=first >")+("<Li>")+("<a onclick=openFolder()")+(">")+ (resultP)+("</a>") +("</Li>")+("<ul>")]  );    
+         }
+         }
+            ourRequest.send();
+             
+         }             
+} 
+// to get path and the redirect to open directory /download
+function openFolder(){
+        var g = document.getElementById("demo");
+        Port1= document.getElementById("ip2").value ;
+        for (var i = 0, len = g.children.length; i < len; i++)
+        {
+        (function(index)
+        {
+        g.children[i].onclick = function ()
+        {
+        gg= (index)
+        //get path and folder index of clicked file
+        Folder_name = document.getElementById("demo").getElementsByTagName("a")[gg].innerText;
+        console.log(Folder_name);
+        $("#path").val($('#path').val()+("/"+ Folder_name))
+        document.getElementById("btn3").disabled = false; 
+        }  
+        })(i);
+       
+      }
+      if(Port1==9000){
+       download();
+      }else{
+        alert("please enter a valid port address");
+      }
+       
+}
+        //to check if it is file or directory
+        function download(){
+        path1= document.getElementById("path").value
+        var ourRequest = new XMLHttpRequest();
+        ourRequest.open('GET',"http://"+ IP + ":50070" + "/webhdfs/v1"+ path1 +"/?user.name=hduser&op=LISTSTATUS")
+        ourRequest.onload = function() {     
+        var textPP =(ourRequest.responseText);
+        objPPP = JSON.parse(textPP);
+        var j = gg
+        if (objPPP&& objPPP.FileStatuses&& objPPP.FileStatuses.FileStatus[j]) {
+        resultppp = (objPPP.FileStatuses.FileStatus[j].type);
+        //console.log(resultppp);
+        document.getElementById("Type").value = resultppp
+      
+        }  var myTextBox = document.getElementById("Type");
+        var Type1 = myTextBox.value;
+        console.log(Type1);
+       // Port1= document.getElementById("ip2").value ;
+        
+        
+        
+        if(Type1 == "FILE"){
+          var retVal = confirm(" This is a File ,Do you want to Download?");
+          //download condition
+        
+               if( retVal == true ) {
+                  //var retValue = prompt("Enter correct port number : ", "8020/9000");
+                  //if (retValue == null
+                    //showFolder();
+                   //}
+                  //else{ 
+                  alert("File Downling!");
+                   
+                  Path2 = document.getElementById("path").value
+                  console.log(Path2);
+                  
+                
+                  //download files
+                  window.location.href = "http://"+IP+ ":50075/webhdfs/v1"+Path2+"?op=OPEN&namenoderpcaddress="+IP+":"+Port1+"&offset=0"
+
+                  }
+                else {
+                  showFolder();
+               }
+        }
+        else{
+          showFolder();
+        }
+        
+        }
+        ourRequest.send();
+        }
+        
+        //open a directory
+        function showFolder(){
+        $("#demo").empty();
+        Path = document.getElementById("path").value
+        var ourRequest = new XMLHttpRequest();
+        ourRequest.open('GET',"http://"+ IP + ":50070" + "/webhdfs/v1"+ Path +"?user.name=hduser&op=LISTSTATUS")
+        ourRequest.onload = function() {     
+        var textPP =(ourRequest.responseText);
+        objPP = JSON.parse(textPP);
+        for ( j = 0; j < textPP.length; j++)
+        if (objPP&& objPP.FileStatuses&& objPP.FileStatuses.FileStatus[j]) {
+        resultPP = (objPP.FileStatuses.FileStatus[j].pathSuffix);
+        console.log(resultPP);
+        $("#demo").html($('#demo').html()+ [("<ul class=first >")+("<Li>")+("<a onclick=openFolder()")+(">") +(resultPP)+("</a>")+("</Li>")+("<ul>")]);
+        document.getElementById("btn3").disabled = false;
+        } 
+        
+        }   
+          ourRequest.send()
+        }          
+// back button
+function getPrevPageP() {
+    var stringsearch = '/'
+    var get = document.getElementById("path").value;
+    var stringsearch = '/'
+    for(var i=count=0; i<get.length; count+=+(stringsearch===get[i++]));
+    NumberofSlash = count
+    if( NumberofSlash == 1) {
+    document.getElementById("path").value= "";
+    $("#demo").empty();
+    openlinkP();
+    document.getElementById("btn3").disabled = true; 
+    }
+    else {
+    var temp = Path.split('/');
+    temp.pop();
+    var NewPath = temp.join('/');
+    //zz= (yy.substring(0, yy.lastIndexOf("/") + 1));
+    $("#path").val("");
+    $("#path").val($('#path').val()+(NewPath))
+    showFolder();   
+      }
+  }   
+</script>
+ 
+<script> 
+      document.getElementById("btn5").disabled = true;
+      $("#path1").hide();
+      $("#type1").hide();
+      //To load first set of files and directories
+      function openlinkQ () { 
+        document.getElementById("Type1").value="";
+        document.getElementById("path1").value="";  
+      var get = document.getElementById("ip4").value;
+       //condition to check if ip is there or not
+      if(get == 0){
+      alert("Please enter an IPaddress")}
+      else{
+      $("#demo1").empty();
+      IP2 = document.getElementById("ip4").value ;
+      Port2 = document.getElementById("ip3").value ;
+      
+      var ourRequest = new XMLHttpRequest();
+      ourRequest.open('GET',"http://"+ IP2 + ":50070" + "/webhdfs/v1/?user.name=hduser&op=LISTSTATUS")
+      ourRequest.onload = function JsonPARSEQ() {
+      var textQ =(ourRequest.responseText);
+      objQ= JSON.parse(textQ); 
+      for ( D = 0; D < textQ.length; D++)
+      if (objQ&& objQ.FileStatuses&& objQ.FileStatuses.FileStatus[D]) {
+      var resultQ= (objQ.FileStatuses.FileStatus[D].pathSuffix);   
+       //to display the files names
+      $("#demo1").html($('#demo1').html()+ [("<ul class=first >")+("<Li>")+("<a onclick=openFolderQ()")+(">")+ (resultQ)+("</a>") +("</Li>")+("<ul>")]  ); 
+      }     
+      } 
+      ourRequest.send();
+}}
+// to get path and the redirect to open directory /download
+function openFolderQ(){
+        var g = document.getElementById("demo1");
+        Port2 = document.getElementById("ip3").value ;
+        for (var i = 0, len = g.children.length; i < len; i++)
+        {
+        (function(index){
+        g.children[i].onclick = function ()
+        {
+        ggQ= (index)
+        Folder_nameQ = document.getElementById("demo1").getElementsByTagName("a")[ggQ].innerText;
+        console.log(Folder_nameQ);
+        $("#path1").val($('#path1').val()+("/"+ Folder_nameQ))
+        document.getElementById("btn5").disabled = false;  
+        }    
+        })(i);
+       }
+       if(Port2==8020){
+       download1();
+       }else{
+       alert("please enter a valid port address");
+}
+       }
+
+        //to check if it is file or directory
+function download1(){
+        path2= document.getElementById("path1").value
+        var ourRequest = new XMLHttpRequest();
+        ourRequest.open('GET',"http://"+ IP2 + ":50070" + "/webhdfs/v1"+ path2 +"/?user.name=hduser&op=LISTSTATUS")
+        ourRequest.onload = function() {     
+        var textQQ =(ourRequest.responseText);
+        objQQQ= JSON.parse(textQQ);
+        var j = ggQ
+        if (objQQQ&& objQQQ.FileStatuses&& objQQQ.FileStatuses.FileStatus[j]) {
+        resultQQQ = (objQQQ.FileStatuses.FileStatus[j].type);
+        //console.log(resultppp);
+        document.getElementById("Type1").value = resultQQQ
+
+        }  var myTextBox = document.getElementById("Type1");
+        var Type2 = myTextBox.value;
+        console.log(Type2);
+        if(Type2 == "FILE"){
+          var retVal = confirm(" This is a File ,Do you want to Download?");
+           //download condition
+               if( retVal == true ) {
+                  //var retValue = prompt("Enter correct port number : ", "8020/9000");
+                  
+                  //if (retValue == null){
+                    //showFolder();
+                   //}
+                  //else{ 
+                  alert("File Downling!");
+                  Path3 = document.getElementById("path1").value
+                  console.log(Path3);
+              
+                  window.location.href = "http://"+IP2+ ":50075/webhdfs/v1"+Path3+"?op=OPEN&namenoderpcaddress="+IP2+":"+Port2+"&offset=0"
+                  }
+                else {
+                  showFolderQ();
+               }
+        }
+        else{
+          showFolderQ();
+        }
+        }
+        ourRequest.send();
+        }
+         //open a directory
+        function showFolderQ(){
+        $("#demo1").empty();
+        PathQ = document.getElementById("path1").value; 
+        var ourRequest = new XMLHttpRequest();
+        ourRequest.open('GET',"http://"+ IP2 + ":50070" + "/webhdfs/v1"+ PathQ +"?user.name=hduser&op=LISTSTATUS")
+        ourRequest.onload = function() {     
+        var textQQ =(ourRequest.responseText);
+        objQQ = JSON.parse(textQQ);
+        for ( j = 0; j < textQQ.length; j++)
+        if (objQQ&& objQQ.FileStatuses&& objQQ.FileStatuses.FileStatus[j]) {
+        resultQQ = (objQQ.FileStatuses.FileStatus[j].pathSuffix);
+        console.log(resultQQ);
+        $("#demo1").html($('#demo1').html()+ [("<ul class=first >")+("<Li>")+("<a onclick=openFolderQ()")+(">") +(resultQQ)+("</a>")+("</Li>")+("<ul>")]);
+        document.getElementById("btn5").disabled = false;
+        } 
+        }   
+          ourRequest.send()          
+}
+       // back button
+      function getPrevPageQ() {
+      var stringsearch = '/'
+      var get = document.getElementById("path1").value;
+      var stringsearch = '/'
+      for(var i=count=0; i<get.length; count+=+(stringsearch===get[i++]));
+      NumberofSlashQ = count
+      if( NumberofSlashQ == 1) {
+      document.getElementById("path1").value= "";
+      $("#demo1").empty();
+      openlinkQ();
+      document.getElementById("btn5").disabled = true; 
+     }
+     else {
+     var temp = PathQ.split('/');
+     temp.pop();
+     var NewPath = temp.join('/');
+    //zz= (yy.substring(0, yy.lastIndexOf("/") + 1));
+     $("#path1").val("");
+     $("#path1").val($('#path1').val()+(NewPath))
+    showFolderQ();   
+      }
+  }  
+
+  //For copying 
+  function copy()
+  {
+    
+  }
+
+</script>
+        
+
+ <script>
+            
+    var menuDisplayed = false;
+    var menuBox = null;
+    
+    window.addEventListener("contextmenu", function() {
+        var left = arguments[0].clientX;
+        var top = arguments[0].clientY;
+        
+        menuBox = window.document.querySelector(".menu");
+        menuBox.style.left = left + "px";
+        menuBox.style.top = top + "px";
+        menuBox.style.display = "block";
+        
+        arguments[0].preventDefault();
+        
+        menuDisplayed = true;
+    }, false);
+    
+    window.addEventListener("click", function() {
+        if(menuDisplayed == true){
+            menuBox.style.display = "none"; 
+        }
+    },true);
+    
+</script>
+   
+
+       
+</body>
+</html>       
